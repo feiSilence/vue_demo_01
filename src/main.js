@@ -19,6 +19,12 @@ import utils from './utils/index.js'
 // 将工具方法绑定到全局
 Vue.prototype.$utils = utils
 
+// 配置百度编辑器
+import '../static/ue/ueditor.config.js'
+import '../static/ue/ueditor.all.min.js'
+import '../static/ue/lang/zh-cn/zh-cn.js'
+import '../static/ue/ueditor.parse.min.js'
+
 // 使用配置文件规则
 const router = new VueRouter({
   routes

@@ -24,12 +24,13 @@ export default {
   created () {
     // 组件创建完后获取数据，这里和1.0不一样，改成了这个样子
     this.getData()
+    console.log(this.$route)
   },
   methods: {
     getData () {
       this.$api.get('topics', null, r => {
         this.list = r.data
-        console.log(r)
+        console.log(r.data)
       })
     }
   }
